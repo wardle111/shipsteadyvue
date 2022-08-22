@@ -5,8 +5,7 @@
   ">
     <v-app-bar app color="#163C81" dark>
       <div class="d-flex align-center">
-        <v-img alt="ShipSteady Logo" class="shrink mr-2" contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" transition="scale-transition" width="40" />
+        <v-img alt="ShipSteady Logo" class="shrink mr-2" contain :src="require('./assets/logo.jpg')" transition="scale-transition" max-width="60" />
       </div>
       <v-tabs centered class="ml-n9" color="white">
         <v-tab v-for="link in links" :key="link">
@@ -27,9 +26,9 @@
                 }" min-height="300" transition="fade-transition">
                   <v-card class="mx-auto" max-width="600" color="blue darken-4" dark elevation="20">
                     <v-card-title class="display-6">
-                      Our Mission Statement
+                      <v-img alt="ShipSteady Logo" class="shrink mr-2" contain :src="require('./assets/logo.jpg')" transition="scale-transition" max-width="100" /> Our Mission Statement
                     </v-card-title>
-                    <v-img src="src/assets/logo.jpg" transition="scale-transition" />
+                    
                     <v-divider></v-divider>
                     <v-card-subtitle>Blah blah blahBlah blah blahBlah blah blah Blah blah blah.</v-card-subtitle>
                   </v-card>
