@@ -41,9 +41,19 @@
                 <v-card flat width="100%" class="text-center" style="
     background: #455A64;">
                     <v-card-text>
-                        <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+                        <v-btn class="mx-4" icon to="/">
                             <v-icon size="24px">
-                                {{ icon }}
+                                mdi-home
+                            </v-icon>
+                        </v-btn>
+                        <v-btn class="mx-4" icon href="https://twitter.com" target="_blank">
+                            <v-icon size="24px">
+                                mdi-twitter
+                            </v-icon>
+                        </v-btn>
+                        <v-btn class="mx-4" icon href="https://facebook.com" target="_blank">
+                            <v-icon size="24px">
+                                mdi-facebook
                             </v-icon>
                         </v-btn>
                     </v-card-text>

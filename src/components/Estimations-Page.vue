@@ -1,6 +1,6 @@
 <template>
   <v-row class="pa-12">
-    <v-card class="mx-auto justify-center" max-width="600" color="#1976D2" dark>
+    <v-card class="mx-auto justify-center" max-width="600" color="#455A64" dark>
 
       <div class="text-center">
         <v-card-title class="text-h4 justify-center font-weight-black">
