@@ -1,14 +1,13 @@
 
-                <template>
-    <v-parallax>
-        <v-responsive class="overflow-y-auto" max-height="600">
-            <v-responsive height="500vh" class="text-center pa-0 ma-0">
-                <v-responsive min-height="10vh"></v-responsive>
+<template>
+    <v-parallax style="height: 100vh;">
+        <v-responsive class="overflow-y-auto" max-height="800" >
+            <v-responsive height="300vh" class="text-center pa-0 ma-0">
                 <v-lazy v-model="isActive" :options="{
                     threshold: .5
-                }" min-height="300" transition="fade-transition">
-                    <v-row class="pa-12">
-                        <v-card class="mx-auto justify-center" max-width="600" color="#1976D2" dark>
+                }" min-height="440" transition="fade-transition" class="pa-6">
+                    <v-row class="pt-3">
+                        <v-card class="mx-auto justify-center" max-width="600" color="#263238" dark>
 
                             <div class="text-center">
                                 <v-card-title class="text-h4 justify-center font-weight-black">
@@ -29,7 +28,7 @@
                                     </v-card>
                                 </v-card-title>
                             </div>
-                            <v-card-subtitle style="background: #163C81;">Lorem ipsum dolor sit
+                            <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor sit
                                 amet,
                                 consectetur adipiscing elit. Nullam vel imperdiet sapien. Vivamus
                                 vitae ex
@@ -43,7 +42,7 @@
                 <v-divider></v-divider>
                 <v-lazy v-model="isActive" :options="{
                     threshold: .5
-                }" min-height="100" transition="fade-transition">
+                }" min-height="200" transition="fade-transition">
                     <v-row class="pa-6">
                         <v-col>
                             <template>
@@ -152,7 +151,6 @@
         </v-responsive>
     </v-parallax>
 </template>
->
 
 <script>
 export default {

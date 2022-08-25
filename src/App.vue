@@ -1,10 +1,9 @@
 
 <template>
     <v-app id="inspire" style="
-    background:lightgray;
+    background:#ECEFF1;
   ">
-        <v-content fill fluid>
-            <v-app-bar app color="#163C81" dark>
+            <v-app-bar app color="blue-grey darken-4" dark>
                 <div class="d-flex align-center">
                     <router-link to="/">
                         <v-img alt="ShipSteady Logo" class="shrink mr-2" contain :src="require('./assets/logo.jpg')"
@@ -27,21 +26,20 @@
                         About
                     </v-tab>
                 </v-tabs>
-
-            </v-app-bar>
-            <v-container style="
-    background: #90CAF9;">
-    <main>
-                <router-view class="pa-0">
-                </router-view>
-                </main>
+            </v-app-bar>      
+            <v-content fill max-size="600">
+            <v-container style="height: 100vh; background: #37474F;" fill>
+                <v-row style="height: 100vh;" justify="center" max-width="800">
+                    <router-view>
+                    </router-view>
+                </v-row>
             </v-container>
         </v-content>
-        <v-footer v-bind="localAttrs" :padless="padless" fixed dark style="
-    background: #163C81;" class="pa-0">
+        <v-footer fixed v-bind="localAttrs" :padless="padless" dark style="
+    background: #263238;" class="pa-0">
             <v-row justify="center" no-gutters>
                 <v-card flat width="100%" class="text-center" style="
-    background: #163C81;">
+    background: #263238;">
                     <v-card-text>
                         <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
                             <v-icon size="24px">
