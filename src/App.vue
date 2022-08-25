@@ -29,8 +29,13 @@
                 </v-tabs>
 
             </v-app-bar>
-            <router-view class="pa-0">
-            </router-view>
+            <v-container style="
+    background: #90CAF9;">
+    <main>
+                <router-view class="pa-0">
+                </router-view>
+                </main>
+            </v-container>
         </v-content>
         <v-footer v-bind="localAttrs" :padless="padless" fixed dark style="
     background: #163C81;" class="pa-0">

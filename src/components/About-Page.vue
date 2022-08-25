@@ -1,75 +1,34 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          About PAGE
-        </h1>
-      </v-col>
-            <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          ADD CONTENT
-        </h1>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-row class="pa-12">
+    <v-card class="mx-auto justify-center" max-width="600" color="#1976D2" dark>
+
+      <div class="text-center">
+        <v-card-title class="text-h4 justify-center font-weight-black">
+
+          <v-card class="rounded-xl pa-3 mx-auto" max-width="500" color="#163C81" dark elevation="10">
+            <v-row class="justify-center pt-3">
+              <v-img alt="ShipSteady Logo" class="shrink mr-2 justify-center" contain
+                :src="require('../assets/logo.jpg')" transition="scale-transition" max-width="100" />
+            </v-row>
+            <v-row class="justify-center pa-3">
+              About Us
+            </v-row>
+          </v-card>
+        </v-card-title>
+      </div>
+      <v-card-subtitle style="background: #163C81;">Lorem ipsum dolor sit
+        amet,
+        consectetur adipiscing elit. Nullam vel imperdiet sapien. Vivamus
+        vitae ex
+        in massa sodales faucibus. Vestibulum pulvinar orci tellus, et
+        tincidunt
+        eros lobortis vitae. Nunc sit amet quam mauris. I</v-card-subtitle>
+    </v-card>
+  </v-row>
 </template>
 
 <script>
-  export default {
-    name: 'About-Page',
-
-    data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
-  }
+export default {
+  name: 'About-Page',
+}
 </script>
