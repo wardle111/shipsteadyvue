@@ -1,8 +1,8 @@
 
 <template>
-    <v-row justify="center" max-width="50vh">
         <v-parallax style="height: 100vh;">
             <v-responsive class="overflow-y-auto" max-height="600">
+                
                 <v-lazy v-model="isActive" :options="{
                     threshold: .5
                 }" min-height="400" transition="fade-transition">
@@ -126,7 +126,9 @@
                         </v-col>
                     </v-row>
                 </v-lazy>
+
                 <v-divider></v-divider>
+
                 <v-lazy v-model="isActive" :options="{
                     threshold: .5
                 }" min-height="300" transition="fade-transition">
@@ -173,6 +175,7 @@
                 </v-lazy>
 
                 <v-divider></v-divider>
+
                 <v-lazy v-model="isActive" :options="{
                     threshold: .5
                 }" min-height="200" transition="fade-transition">
@@ -198,12 +201,12 @@
                         </v-col>
                     </v-row>
                 </v-lazy>
-                <v-divider></v-divider>
 
+                <v-divider></v-divider>
 
             </v-responsive>
         </v-parallax>
-    </v-row>
+
 </template>
 
 <script>
