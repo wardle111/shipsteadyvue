@@ -1,12 +1,12 @@
 <template>
     <v-content>
-        <v-container class="pa-0" style="
+        <v-container style="
     background: #90CAF9;">
             <v-main>
                 <template>
                     <v-parallax>
                         <v-responsive class="overflow-y-auto" max-height="600">
-                            <v-responsive height="500vh" class="text-center pa-0">
+                            <v-responsive height="500vh" class="text-center pa-0 ma-0">
                                 <v-responsive min-height="10vh"></v-responsive>
                                 <v-lazy v-model="isActive" :options="{
                                     threshold: .5
@@ -26,15 +26,14 @@
                                                                 transition="scale-transition" max-width="100" />
                                                         </v-row>
                                                         <v-row class="justify-center pa-3">
-                                                            ShipSteady&copy;
+                                                            ShipSteady
+                                                        </v-row>
+                                                        <v-row class="justify-center pa-3 text-h6 font-italic font-weight-light">
+                                                            Software Solutionists.
                                                         </v-row>
                                                     </v-card>
                                                 </v-card-title>
                                             </div>
-                                            <v-card-subtitle dark class="text-h6 font-italic font-weight-black">
-                                                Software
-                                                Solutionists.</v-card-subtitle>
-                                            <v-divider></v-divider>
                                             <v-card-subtitle style="background: #163C81;">Lorem ipsum dolor sit
                                                 amet,
                                                 consectetur adipiscing elit. Nullam vel imperdiet sapien. Vivamus
