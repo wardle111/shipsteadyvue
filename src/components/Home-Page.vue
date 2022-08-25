@@ -7,12 +7,12 @@
                     threshold: .5
                 }" min-height="400" transition="fade-transition">
                     <v-row class="pt-3">
-                        <v-card class="mx-auto justify-center" max-width="600" color="#455A64" dark>
+                        <v-card class="mx-auto justify-center" max-width="600" color="#BF360C" dark>
 
                             <div class="text-center">
                                 <v-card-title class="text-h4 justify-center font-weight-black">
 
-                                    <v-card class="rounded-xl pa-3 mx-auto" max-width="500" color="#163C81" dark
+                                    <v-card class="rounded-xl pa-3 mx-auto" max-width="500" color="#FF3D00" dark
                                         elevation="10">
                                         <v-row class="justify-center pt-3">
                                             <v-img alt="ShipSteady Logo" class="shrink mr-2 justify-center" contain
@@ -28,7 +28,7 @@
                                     </v-card>
                                 </v-card-title>
                             </div>
-                            <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor sit
+                            <v-card-subtitle style="background: #FF6E40;">Lorem ipsum dolor sit
                                 amet,
                                 consectetur adipiscing elit. Nullam vel imperdiet sapien. Vivamus
                                 vitae ex
@@ -46,13 +46,13 @@
                     <v-row class="pa-6">
                         <v-col>
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         What we do...
                                     </v-card-title>
                                     <v-divider></v-divider>
-                                    <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor
+                                    <v-card-subtitle style="background: #FF6E40;">Lorem ipsum dolor
                                         sit
                                         amet, consectetur adipiscing elit. Nullam vel imperdiet
                                         sapien.
@@ -73,16 +73,16 @@
                     <v-row class="pa-6">
                         <v-col cols="16">
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         Step by Step...
                                     </v-card-title>
                                     <v-divider></v-divider>
-                                    <v-card-subtitle style="background: #1976D2;">
+                                    <v-card-subtitle style="background: #FF3D00;">
                                         <v-row>
                                             <v-col>
-                                                <v-card class="rounded-xl pa-3" max-width="300" color="blue lighten-1"
+                                                <v-card class="rounded-xl pa-3" max-width="300" color="#FF6E40"
                                                     dark elevation="10">
                                                     <v-timeline>
                                                         <v-timeline-item class="text-left">
@@ -104,7 +104,7 @@
                                                 </v-card>
                                             </v-col>
                                             <v-col>
-                                                <v-card class="rounded-xl pa-3" max-width="300" color="blue lighten-1"
+                                                <v-card class="rounded-xl pa-3" max-width="300" color="#FF6E40"
                                                     dark elevation="10">
                                                     <v-timeline>
                                                         <v-timeline-item class="text-left">
@@ -135,16 +135,16 @@
                     <v-row class="pa-6">
                         <v-col>
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         Meet the squad...
                                     </v-card-title>
                                     <v-divider></v-divider>
-                                    <v-card class="pa-3" style="background: #1976D2;">
+                                    <v-card class="pa-3" style="background: #FF3D00;">
                                         <v-img src="https://picsum.photos/350/165?random" height="125" contain
-                                            class="blue lighten-3"></v-img>
-                                        <v-card-subtitle style="background: #1976D2;">Lorem ipsum
+                                            style="background-color: #FF6E40"></v-img>
+                                        <v-card-subtitle style="background: #FF6E40;">Lorem ipsum
                                             dolor sit
                                             amet, consectetur adipiscing elit. Nullam vel imperdiet
                                             sapien.
@@ -155,10 +155,10 @@
                                             quam mauris..</v-card-subtitle>
                                     </v-card>
                                     <v-divider></v-divider>
-                                    <v-card class="pa-3" style="background: #1976D2;">
+                                    <v-card class="pa-3" style="background: #FF3D00;">
                                         <v-img src="https://picsum.photos/350/165?random" height="125" contain
-                                            class="blue lighten-3"></v-img>
-                                        <v-card-subtitle style="background: #1976D2;">Lorem ipsum
+                                            style="background-color: #FF6E40"></v-img>
+                                        <v-card-subtitle style="background: #FF6E40;">Lorem ipsum
                                             dolor sit
                                             amet, consectetur adipiscing elit. Nullam vel imperdiet
                                             sapien.
@@ -182,13 +182,13 @@
                     <v-row class="pa-6">
                         <v-col>
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         Another section...
                                     </v-card-title>
                                     <v-divider></v-divider>
-                                    <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor
+                                    <v-card-subtitle style="background: #FF6E40;">Lorem ipsum dolor
                                         sit
                                         amet, consectetur adipiscing elit. Nullam vel imperdiet
                                         sapien.

@@ -12,7 +12,7 @@
             </div>
             <v-spacer></v-spacer>
 
-            <v-tabs fixed centered class="ml-n9" color="#163C81">
+            <v-tabs fixed centered class="ml-n9" color="#BF360C">
                 <v-tab centered color="blue" icon="mdi-home" to="/">
                     Home
                 </v-tab>
