@@ -13,7 +13,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   mode: "history",
   routes: [
-    { name: "Home", component: Home, path: "/home", children: [] },
+    { name: "Home", component: Home, path: "/", children: [] },
     { name: "Approach-Page", component: Approach, path: "/approach", children: [] },
     { name: "Estimations-Page", component: Estimation, path: "/estimations", children: [] },
     { name: "About-Page", component: About, path: "/about", children: [] }

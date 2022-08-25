@@ -10,8 +10,9 @@
                         transition="scale-transition" max-width="50" />
                 </div>
                 <v-spacer></v-spacer>
+
                 <v-tabs fixed centered class="ml-n9" color="white">
-                    <v-tab centered color="white" icon="mdi-home" to="/home">
+                    <v-tab centered color="white" icon="mdi-home" to="/">
                         Home
                     </v-tab>
                     <v-tab color="white" to="/approach">
@@ -24,6 +25,7 @@
                         About
                     </v-tab>
                 </v-tabs>
+
             </v-app-bar>
             <router-view>
             </router-view>
