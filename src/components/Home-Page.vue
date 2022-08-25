@@ -1,155 +1,205 @@
 
 <template>
-    <v-parallax style="height: 100vh;">
-        <v-responsive class="overflow-y-auto" max-height="800" >
-            <v-responsive height="300vh" class="text-center pa-0 ma-0">
-                <v-lazy v-model="isActive" :options="{
-                    threshold: .5
-                }" min-height="440" transition="fade-transition" class="pa-6">
-                    <v-row class="pt-3">
-                        <v-card class="mx-auto justify-center" max-width="600" color="#263238" dark>
+    <v-row justify="center">
+        <v-parallax style="height: 100vh;">
+            <v-responsive class="overflow-y-auto" max-height="600">
+                <v-responsive height="300vh" width="150vh" class="text-center">
+                    <v-lazy v-model="isActive" :options="{
+                        threshold: .5
+                    }" min-height="400" transition="fade-transition">
+                        <v-row class="pt-3">
+                            <v-card class="mx-auto justify-center" max-width="600" color="#455A64" dark>
 
-                            <div class="text-center">
-                                <v-card-title class="text-h4 justify-center font-weight-black">
+                                <div class="text-center">
+                                    <v-card-title class="text-h4 justify-center font-weight-black">
 
-                                    <v-card class="rounded-xl pa-3 mx-auto" max-width="500" color="#163C81" dark
-                                        elevation="10">
-                                        <v-row class="justify-center pt-3">
-                                            <v-img alt="ShipSteady Logo" class="shrink mr-2 justify-center" contain
-                                                :src="require('../assets/logo.jpg')" transition="scale-transition"
-                                                max-width="100" />
-                                        </v-row>
-                                        <v-row class="justify-center pa-3">
-                                            ShipSteady
-                                        </v-row>
-                                        <v-row class="justify-center pa-3 text-h6 font-italic font-weight-light">
-                                            Software Solutionists.
-                                        </v-row>
-                                    </v-card>
-                                </v-card-title>
-                            </div>
-                            <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor sit
-                                amet,
-                                consectetur adipiscing elit. Nullam vel imperdiet sapien. Vivamus
-                                vitae ex
-                                in massa sodales faucibus. Vestibulum pulvinar orci tellus, et
-                                tincidunt
-                                eros lobortis vitae. Nunc sit amet quam mauris. I</v-card-subtitle>
-                        </v-card>
-                    </v-row>
-                </v-lazy>
-
-                <v-divider></v-divider>
-                <v-lazy v-model="isActive" :options="{
-                    threshold: .5
-                }" min-height="200" transition="fade-transition">
-                    <v-row class="pa-6">
-                        <v-col>
-                            <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
-                                    elevation="10">
-                                    <v-card-title class="text-h5 text-center font-weight-black">
-                                        What we do...
-                                    </v-card-title>
-                                    <v-divider></v-divider>
-                                    <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor
-                                        sit
-                                        amet, consectetur adipiscing elit. Nullam vel imperdiet
-                                        sapien.
-                                        Vivamus vitae ex in massa sodales faucibus. Vestibulum
-                                        pulvinar
-                                        orci tellus, et tincidunt eros lobortis vitae. Nunc sit amet
-                                        quam mauris.</v-card-subtitle>
-                                </v-card>
-                            </template>
-                        </v-col>
-                    </v-row>
-                </v-lazy>
-                <v-divider></v-divider>
-                <v-lazy v-model="isActive" :options="{
-                    threshold: .5
-                }" min-height="300" transition="fade-transition">
-                    <v-row class="pa-6">
-                        <v-col cols="16">
-                            <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
-                                    elevation="10">
-                                    <v-card-title class="text-h5 text-center font-weight-black">
-                                        Step by Step...
-                                    </v-card-title>
-                                    <v-divider></v-divider>
-                                    <v-card-subtitle style="background: #1976D2;">
-                                        <v-card class="rounded-xl pa-3" max-width="300" color="blue lighten-1" dark
+                                        <v-card class="rounded-xl pa-3 mx-auto" max-width="500" color="#163C81" dark
                                             elevation="10">
-                                            <v-timeline>
-                                                <v-timeline-item class="text-left">
-                                                    Step.1
-                                                </v-timeline-item>
-                                                <v-timeline-item class="text-right">
-                                                    Step.2
-                                                </v-timeline-item>
-                                                <v-timeline-item class="text-left">
-                                                    Step.3
-                                                </v-timeline-item>
-                                            </v-timeline>
-
+                                            <v-row class="justify-center pt-3">
+                                                <v-img alt="ShipSteady Logo" class="shrink mr-2 justify-center" contain
+                                                    :src="require('../assets/logo.jpg')" transition="scale-transition"
+                                                    max-width="100" />
+                                            </v-row>
+                                            <v-row class="justify-center pa-3">
+                                                ShipSteady
+                                            </v-row>
+                                            <v-row class="justify-center pa-3 text-h6 font-italic font-weight-light">
+                                                Software Solutionists.
+                                            </v-row>
                                         </v-card>
-                                    </v-card-subtitle>
-                                </v-card>
-                            </template>
-                        </v-col>
-                    </v-row>
-                </v-lazy>
-                <v-divider></v-divider>
-                <v-lazy v-model="isActive" :options="{
-                    threshold: .5
-                }" min-height="300" transition="fade-transition">
-                    <v-row class="pa-6">
-                        <v-col>
-                            <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
-                                    elevation="10">
-                                    <v-card-title class="text-h5 text-center font-weight-black">
-                                        Meet the squad...
                                     </v-card-title>
-                                    <v-divider></v-divider>
-                                    <v-card class="pa-3" style="background: #1976D2;">
-                                        <v-img src="https://picsum.photos/350/165?random" height="125" contain
-                                            class="blue lighten-3"></v-img>
-                                        <v-card-subtitle style="background: #1976D2;">Lorem ipsum
-                                            dolor sit
+                                </div>
+                                <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit. Nullam vel imperdiet sapien. Vivamus
+                                    vitae ex
+                                    in massa sodales faucibus. Vestibulum pulvinar orci tellus, et
+                                    tincidunt
+                                    eros lobortis vitae. Nunc sit amet quam mauris. I</v-card-subtitle>
+                            </v-card>
+                        </v-row>
+                    </v-lazy>
+
+                    <v-divider></v-divider>
+                    <v-lazy v-model="isActive" :options="{
+                        threshold: .5
+                    }" min-height="200" transition="fade-transition">
+                        <v-row class="pa-6">
+                            <v-col>
+                                <template>
+                                    <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                        elevation="10">
+                                        <v-card-title class="text-h5 text-center font-weight-black">
+                                            What we do...
+                                        </v-card-title>
+                                        <v-divider></v-divider>
+                                        <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor
+                                            sit
                                             amet, consectetur adipiscing elit. Nullam vel imperdiet
                                             sapien.
                                             Vivamus vitae ex in massa sodales faucibus. Vestibulum
                                             pulvinar
-                                            orci tellus, et tincidunt eros lobortis vitae. Nunc sit
-                                            amet
-                                            quam mauris..</v-card-subtitle>
+                                            orci tellus, et tincidunt eros lobortis vitae. Nunc sit amet
+                                            quam mauris.</v-card-subtitle>
                                     </v-card>
-                                    <v-divider></v-divider>
-                                    <v-card class="pa-3" style="background: #1976D2;">
-                                        <v-img src="https://picsum.photos/350/165?random" height="125" contain
-                                            class="blue lighten-3"></v-img>
-                                        <v-card-subtitle style="background: #1976D2;">Lorem ipsum
-                                            dolor sit
+                                </template>
+                            </v-col>
+                        </v-row>
+                    </v-lazy>
+                    <v-divider></v-divider>
+
+                    <v-lazy v-model="isActive" :options="{
+                        threshold: .5
+                    }" min-height="300" transition="fade-transition">
+                        <v-row class="pa-6">
+                            <v-col cols="16">
+                                <template>
+                                    <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                        elevation="10">
+                                        <v-card-title class="text-h5 text-center font-weight-black">
+                                            Step by Step...
+                                        </v-card-title>
+                                        <v-divider></v-divider>
+                                        <v-card-subtitle style="background: #1976D2;">
+                                            <v-row>
+                                                <v-col>
+                                                    <v-card class="rounded-xl pa-3" max-width="300"
+                                                        color="blue lighten-1" dark elevation="10">
+                                                        <v-timeline>
+                                                            <v-timeline-item class="text-left">
+                                                                Step.1
+                                                            </v-timeline-item>
+                                                            <v-timeline-item class="text-right">
+                                                                Step.2
+                                                            </v-timeline-item>
+                                                            <v-timeline-item class="text-left">
+                                                                Step.3
+                                                            </v-timeline-item>
+                                                        </v-timeline>
+                                                    </v-card>
+                                                </v-col>
+                                                <v-col>
+                                                    <v-card class="rounded-xl pa-3" max-width="300"
+                                                        color="blue lighten-1" dark elevation="10">
+                                                        <v-timeline>
+                                                            <v-timeline-item class="text-left">
+                                                                Step.1
+                                                            </v-timeline-item>
+                                                            <v-timeline-item class="text-right">
+                                                                Step.2
+                                                            </v-timeline-item>
+                                                            <v-timeline-item class="text-left">
+                                                                Step.3
+                                                            </v-timeline-item>
+                                                        </v-timeline>
+                                                    </v-card>
+                                                </v-col>
+                                            </v-row>
+                                        </v-card-subtitle>
+                                    </v-card>
+                                </template>
+                            </v-col>
+                        </v-row>
+                    </v-lazy>
+                    <v-divider></v-divider>
+                    <v-lazy v-model="isActive" :options="{
+                        threshold: .5
+                    }" min-height="300" transition="fade-transition">
+                        <v-row class="pa-6">
+                            <v-col>
+                                <template>
+                                    <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                        elevation="10">
+                                        <v-card-title class="text-h5 text-center font-weight-black">
+                                            Meet the squad...
+                                        </v-card-title>
+                                        <v-divider></v-divider>
+                                        <v-card class="pa-3" style="background: #1976D2;">
+                                            <v-img src="https://picsum.photos/350/165?random" height="125" contain
+                                                class="blue lighten-3"></v-img>
+                                            <v-card-subtitle style="background: #1976D2;">Lorem ipsum
+                                                dolor sit
+                                                amet, consectetur adipiscing elit. Nullam vel imperdiet
+                                                sapien.
+                                                Vivamus vitae ex in massa sodales faucibus. Vestibulum
+                                                pulvinar
+                                                orci tellus, et tincidunt eros lobortis vitae. Nunc sit
+                                                amet
+                                                quam mauris..</v-card-subtitle>
+                                        </v-card>
+                                        <v-divider></v-divider>
+                                        <v-card class="pa-3" style="background: #1976D2;">
+                                            <v-img src="https://picsum.photos/350/165?random" height="125" contain
+                                                class="blue lighten-3"></v-img>
+                                            <v-card-subtitle style="background: #1976D2;">Lorem ipsum
+                                                dolor sit
+                                                amet, consectetur adipiscing elit. Nullam vel imperdiet
+                                                sapien.
+                                                Vivamus vitae ex in massa sodales faucibus. Vestibulum
+                                                pulvinar
+                                                orci tellus, et tincidunt eros lobortis vitae. Nunc sit
+                                                amet
+                                                quam mauris..</v-card-subtitle>
+                                        </v-card>
+                                    </v-card>
+                                </template>
+                            </v-col>
+                        </v-row>
+                    </v-lazy>
+
+                                        <v-divider></v-divider>
+                    <v-lazy v-model="isActive" :options="{
+                        threshold: .5
+                    }" min-height="200" transition="fade-transition">
+                        <v-row class="pa-6">
+                            <v-col>
+                                <template>
+                                    <v-card class="rounded-xl mx-auto" max-width="600" color="blue darken-4" dark
+                                        elevation="10">
+                                        <v-card-title class="text-h5 text-center font-weight-black">
+                                            Another section...
+                                        </v-card-title>
+                                        <v-divider></v-divider>
+                                        <v-card-subtitle style="background: #1976D2;">Lorem ipsum dolor
+                                            sit
                                             amet, consectetur adipiscing elit. Nullam vel imperdiet
                                             sapien.
                                             Vivamus vitae ex in massa sodales faucibus. Vestibulum
                                             pulvinar
-                                            orci tellus, et tincidunt eros lobortis vitae. Nunc sit
-                                            amet
-                                            quam mauris..</v-card-subtitle>
+                                            orci tellus, et tincidunt eros lobortis vitae. Nunc sit amet
+                                            quam mauris.</v-card-subtitle>
                                     </v-card>
-                                </v-card>
-                            </template>
-                        </v-col>
-                    </v-row>
-                </v-lazy>
+                                </template>
+                            </v-col>
+                        </v-row>
+                    </v-lazy>
+                    <v-divider></v-divider>
 
 
+                </v-responsive>
             </v-responsive>
-        </v-responsive>
-    </v-parallax>
+        </v-parallax>
+    </v-row>
 </template>
 
 <script>
