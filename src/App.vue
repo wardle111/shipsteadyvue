@@ -3,7 +3,36 @@
     <v-app id="inspire" style="
     background:#ECEFF1;
   ">
-        <v-app-bar app color="#455A64" dark>
+        <v-app-bar :collapse="!collapseOnScroll" :collapse-on-scroll="collapseOnScroll" absolute style="
+    background: #455A64;" dark scroll-target="#scrolling-techniques-6">
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer">
+            </v-app-bar-nav-icon>
+            <v-toolbar-title class="font-weight-black">ShipSteady</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <div class="d-flex align-center">
+                <v-img alt="ShipSteady Logo" class="shrink mr-2" contain :src="require('./assets/logo.jpg')"
+                    transition="scale-transition" max-width="50" />
+            </div>
+        </v-app-bar>
+        <v-navigation-drawer bottom v-model="drawer" absolute temporary style="background: #263238;" dark>
+            <v-list nav>
+                <v-list-item-group v-model="group" active-class="deep-orange--text text--accent-4">
+                    <v-list-item to="/">
+                        <v-list-item-title>Home</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item to="/approach">
+                        <v-list-item-title>Approach</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item to="/estimations">
+                        <v-list-item-title>Estimations</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item to="/about">
+                        <v-list-item-title>About</v-list-item-title>
+                    </v-list-item>
+                </v-list-item-group>
+            </v-list>
+        </v-navigation-drawer>
+        <v-app-bar app color="#455A64" dark v-if="!$vuetify.breakpoint.xsOnly">
             <div class="d-flex align-center">
                 <router-link to="/">
                     <v-img alt="ShipSteady Logo" class="shrink mr-2" contain :src="require('./assets/logo.jpg')"
@@ -27,6 +56,7 @@
                 </v-tab>
             </v-tabs>
         </v-app-bar>
+
         <v-content fill max-size="600">
             <v-container style="height: 100vh; background: #263238;" fill>
                 <v-row style="height: 100vh;" justify="center" max-width="800">
@@ -67,13 +97,9 @@
 <script>
 export default {
     data: () => ({
-        icons: [
-            'mdi-home',
-            'mdi-email',
-            'mdi-twitter',
-            'mdi-facebook',
-        ],
+        drawer: false,
         e1: 1,
+        collapseOnScroll: true,
     }),
 }
 </script>
