@@ -1,28 +1,24 @@
 
 <template>
-        <v-parallax style="height: 100vh;">
+        <v-parallax style="height: 90vh; background-color: 
+#CFD8DC;">
             <v-responsive class="overflow-y-auto" max-height="600">
                 
                 <v-lazy v-model="isActive" :options="{
                     threshold: .5
-                }" min-height="400" transition="fade-transition">
+                }" min-height="250" transition="fade-transition">
                     <v-row class="pt-3">
-                        <v-card class="mx-auto justify-center" max-width="600" color="#BF360C" dark>
+                        <v-card class="mx-auto justify-center" max-width="600" color="#ECEFF1" dark>
 
                             <div class="text-center">
                                 <v-card-title class="text-h4 justify-center font-weight-black">
 
-                                    <v-card class="rounded-xl pa-3 mx-auto" max-width="500" color="#FF3D00" dark
+                                    <v-card class="rounded-xl pt-6 pr-6 pl-6 mx-auto pb-6" max-width="500" color="##BF360C" dark
                                         elevation="10">
-                                        <v-row class="justify-center pt-3">
-                                            <v-img alt="ShipSteady Logo" class="shrink mr-2 justify-center" contain
-                                                :src="require('../assets/logo.jpg')" transition="scale-transition"
-                                                max-width="100" />
+                                        <v-row class="justify-center font-weight-black font-weight-black deep-orange--text text--accent-4">
+                                            ShipSteady&copy;
                                         </v-row>
-                                        <v-row class="justify-center pa-3">
-                                            ShipSteady
-                                        </v-row>
-                                        <v-row class="justify-center pa-3 text-h6 font-italic font-weight-light">
+                                        <v-row class="justify-center text-h6 font-weight-thin deep-orange--text text--accent-2">
                                             Software Solutionists.
                                         </v-row>
                                     </v-card>
@@ -46,7 +42,7 @@
                     <v-row class="pa-6">
                         <v-col>
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="##BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         What we do...
@@ -73,7 +69,7 @@
                     <v-row class="pa-6">
                         <v-col cols="16">
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="##BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         Step by Step...
@@ -108,13 +104,19 @@
                                                     dark elevation="10">
                                                     <v-timeline>
                                                         <v-timeline-item class="text-left">
+                                                            <p class="text-h6 font-weight-light">
                                                             Step.1
+                                                            </p>
                                                         </v-timeline-item>
                                                         <v-timeline-item class="text-right">
+                                                            <p class="text-h6 font-weight-light">
                                                             Step.2
+                                                            </p>
                                                         </v-timeline-item>
                                                         <v-timeline-item class="text-left">
+                                                            <p class="text-h6 font-weight-light">
                                                             Step.3
+                                                            </p>
                                                         </v-timeline-item>
                                                     </v-timeline>
                                                 </v-card>
@@ -135,7 +137,7 @@
                     <v-row class="pa-6">
                         <v-col>
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="##BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         Meet the squad...
@@ -182,7 +184,7 @@
                     <v-row class="pa-6">
                         <v-col>
                             <template>
-                                <v-card class="rounded-xl mx-auto" max-width="600" color="#BF360C" dark
+                                <v-card class="rounded-xl mx-auto" max-width="600" color="##BF360C" dark
                                     elevation="10">
                                     <v-card-title class="text-h5 text-center font-weight-black">
                                         Another section...

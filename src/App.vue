@@ -3,16 +3,13 @@
     <v-app id="inspire" style="
     background:#ECEFF1;
   ">
-        <v-app-bar :collapse="!collapseOnScroll" :collapse-on-scroll="collapseOnScroll" absolute style="
-    background: #455A64;" dark scroll-target="#scrolling-techniques-6">
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer">
+        <v-app-bar app fixed style="
+    background: ##BF360C;" dark>
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="deep-orange accent-4">
             </v-app-bar-nav-icon>
-            <v-toolbar-title class="font-weight-black">ShipSteady</v-toolbar-title>
+            <v-toolbar-title class="font-weight-black deep-orange--text text--accent-4">ShipSteady<sup>&copy;</sup>
+            </v-toolbar-title>
             <v-spacer></v-spacer>
-            <div class="d-flex align-center">
-                <v-img alt="ShipSteady Logo" class="shrink mr-2" contain :src="require('./assets/logo.jpg')"
-                    transition="scale-transition" max-width="50" />
-            </div>
         </v-app-bar>
         <v-navigation-drawer bottom v-model="drawer" absolute temporary style="background: #263238;" dark>
             <v-list nav>
@@ -32,12 +29,11 @@
                 </v-list-item-group>
             </v-list>
         </v-navigation-drawer>
-        <v-app-bar app color="#455A64" dark v-if="!$vuetify.breakpoint.xsOnly">
+        <v-app-bar app color="##BF360C" dark v-if="!$vuetify.breakpoint.xsOnly">
             <div class="d-flex align-center">
-                <router-link to="/">
-                    <v-img alt="ShipSteady Logo" class="shrink mr-2" contain :src="require('./assets/logo.jpg')"
-                        transition="scale-transition" max-width="50" />
-                </router-link>
+                <v-toolbar-title class="font-weight-black font-weight-black deep-orange--text text--accent-4">
+                    ShipSteady<sup>&copy;</sup>
+                </v-toolbar-title>
             </div>
             <v-spacer></v-spacer>
 
@@ -57,32 +53,32 @@
             </v-tabs>
         </v-app-bar>
 
-        <v-content fill max-size="600">
-            <v-container style="height: 100vh; background: #263238;" fill>
-                <v-row style="height: 100vh;" justify="center" max-width="800">
+        <v-content>
+            <v-container style="background: #263238;height: 100vh;">
+                <v-row justify="center" max-width="800">
                     <router-view>
                     </router-view>
                 </v-row>
             </v-container>
         </v-content>
         <v-footer fixed v-bind="localAttrs" :padless="padless" dark style="
-    background: #455A64;" class="pa-0">
+    background: ##BF360C;" class="pa-0">
             <v-row justify="center" no-gutters>
                 <v-card flat width="100%" class="text-center" style="
-    background: #455A64;">
+    background: ##BF360C;">
                     <v-card-text>
                         <v-btn class="mx-4" icon to="/">
-                            <v-icon size="24px">
+                            <v-icon color="blue" size="24px">
                                 mdi-home
                             </v-icon>
                         </v-btn>
                         <v-btn class="mx-4" icon href="https://twitter.com" target="_blank">
-                            <v-icon size="24px">
+                            <v-icon color="blue" size="24px">
                                 mdi-twitter
                             </v-icon>
                         </v-btn>
                         <v-btn class="mx-4" icon href="https://facebook.com" target="_blank">
-                            <v-icon size="24px">
+                            <v-icon color="blue" size="24px">
                                 mdi-facebook
                             </v-icon>
                         </v-btn>
